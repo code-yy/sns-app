@@ -32,4 +32,7 @@ yarn-error.log*
 next-env.d.ts
 
 # env
-src/utils/env/env.production.js
+src/utils/config/env.production.ts
+
+# report
+__reports__

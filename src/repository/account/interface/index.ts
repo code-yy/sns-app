@@ -1,1 +1,2 @@
-export { accountUrl, type AccountInterface, type CreateParams, type CreateResponse } from './interface';
+export type { AccountInterface, CreateParams, CreateResponse } from './interface';
+export { accountUrl } from './interface';

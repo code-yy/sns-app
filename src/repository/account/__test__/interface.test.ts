@@ -1,4 +1,4 @@
-import type { AccountInterface, CreateParams, CreateResponse } from './interface';
+import type { AccountInterface, CreateParams, CreateResponse } from '../interface/interface';
 
 describe('AccountRepositoryInterface', () => {
   test('createAccount', async () => {
@@ -10,8 +10,7 @@ describe('AccountRepositoryInterface', () => {
       },
       token: 'token',
     };
-    const createAccountMock = jest.fn<Promise<CreateResponse>, [CreateParams]>();
-    createAccountMock.mockResolvedValue(response);
+    const createAccountMock = jest.fn<Promise<CreateResponse>, [CreateParams]>().mockResolvedValue(response);
     const AccountInterfaceMock: AccountInterface = {
       create: createAccountMock,
     };
