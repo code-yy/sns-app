@@ -41,7 +41,7 @@ export const SignUpPresentational: FC<Props> = ({ onSubmit }) => {
   });
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className={container}>
+    <form className={container} onSubmit={handleSubmit(onSubmit)}>
       <Heading2>新規登録</Heading2>
 
       <InputControl name="name" control={control} className={inputStyle} label={'名前'} />

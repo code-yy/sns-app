@@ -44,6 +44,8 @@ jobs:
       - name: Install dependencies
         run: pnpm i
 
-      # Test
+      - name: Type Check
+        run: pnpm typecheck
+
       - name: Test
         run: pnpm test

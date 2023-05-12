@@ -12,5 +12,5 @@ export const Input: FC<Props> = ({ value, onChange, inputRef, ...rest }) => {
     onChange(e.target.value);
   };
 
-  return <input value={value} onChange={handleChange} ref={inputRef} className={container} {...rest} />;
+  return <input ref={inputRef} value={value} className={container} onChange={handleChange} {...rest} />;
 };
