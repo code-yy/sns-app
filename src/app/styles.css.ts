@@ -1,5 +1,10 @@
 import { style } from '@vanilla-extract/css';
 
+export const layout = style({
+  minHeight: '100vh',
+  margin: '0',
+});
+
 export const footer = style({
   display: 'flex',
   justifyContent: 'space-between',

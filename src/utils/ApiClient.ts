@@ -1,11 +1,11 @@
 import axios from 'axios';
-import { apiBaseUrl } from '@/constants/env';
+import { config } from './config/config';
 import type { AxiosInstance } from 'axios';
 
 export type ApiClient = AxiosInstance;
 
 export const apiClient: ApiClient = axios.create({
-  baseURL: apiBaseUrl,
+  baseURL: config.get('NEXT_PUBLIC_API_BASE_URL'),
   headers: {
     'Content-Type': 'application/json',
   },
