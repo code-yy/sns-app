@@ -42,7 +42,7 @@ export const InputPasswordControl = <TFieldValues extends FieldValues>({
           type={showPassword ? 'text' : 'password'}
         />
 
-        <button type="button" onClick={handleTogglePassword} className={buttonStyles}>
+        <button type="button" className={buttonStyles} onClick={handleTogglePassword}>
           {showPassword ? <EyeOpenIcon /> : <EyeNoneIcon />}
         </button>
       </div>

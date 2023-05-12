@@ -32,5 +32,26 @@ module.exports = {
      * @description requireを許可
      */
     '@typescript-eslint/no-var-requires': 'off',
+
+    /**
+     * @description propsを自動でソート
+     * @see {@link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md}
+     */
+    'react/jsx-sort-props': [
+      'error',
+      {
+        callbacksLast: true,
+        shorthandFirst: true,
+        ignoreCase: true,
+        noSortAlphabetically: true,
+        reservedFirst: true,
+      },
+    ],
+
+    /**
+     * @description 中括弧を省略させないようにする
+     * @see {@link https://eslint.org/docs/latest/rules/curly}
+     */
+    curly: ['error', 'all'],
   },
 };
