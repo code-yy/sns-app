@@ -31,8 +31,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# env
-src/utils/config/env.production.ts
-
 # report
 __reports__
